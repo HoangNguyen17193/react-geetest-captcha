@@ -29,7 +29,7 @@ export interface ValidateData {
 
 export interface GeetestCaptcha {
     onReady: (callback: () => void) => void
-    onSuccess: (callback: () => void) => void
+    onSuccess: (callback: (data: ValidateData) => void) => void
     onClose: (callback: () => void) => void
     verify: () => void
     destroy: () => void
@@ -38,4 +38,18 @@ export interface GeetestCaptcha {
     hide: () => void
     getValidate: () => ValidateData
     appendTo: (selector: string) => void
+}
+
+export type GeetestCaptchaProps = {
+    className?: string;
+    onSuccess: (captcha: ValidateData) => void;
+    config: GeetestConfig;
+}
+
+export type CaptchaRef = {
+    reset: () => void;
+    verify: () => void;
+    destroy: () => void;
+    show: () => void;
+    hide: () => void;
 }
