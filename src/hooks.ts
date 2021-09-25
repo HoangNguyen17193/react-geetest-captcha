@@ -84,7 +84,7 @@ export const useGeetestCaptcha = (props: GeetestConfig) => {
         }
       });
       geetestCaptcha.onClose(() => {
-        if (onSuccess && isFunction(onClose)) {
+        if (onClose && isFunction(onClose)) {
           onClose();
         }
       });
