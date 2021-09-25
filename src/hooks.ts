@@ -40,7 +40,7 @@ export const useGeetestCaptcha = (props: GeetestConfig) => {
       geetestCaptcha.onSuccess(() => {
         setVerified(true);
         if (onSuccess && isFunction(onSuccess)) {
-          onSuccess();
+          onSuccess(captcha?.getValidate());
         }
       });
       geetestCaptcha.onClose(() => {
