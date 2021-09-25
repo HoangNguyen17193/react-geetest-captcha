@@ -1,2 +1,2 @@
-# react-geetest-captcha
-Geetest captcha hook and utility for react
+# React Geetest captcha
+Geetest captcha hook, component and utility for react

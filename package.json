@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "React hooks, components for Geetest captcha",
   "author": "Hoang Nguyen",
+  "repository": "https://github.com/HoangNguyen17193/react-geetest-captcha.git",
+  "license": "MIT",
+  "private": false,
   "scripts": {
     "build": "yarn tsc -b",
     "clean": "rimraf dist",
@@ -40,8 +43,5 @@
     "rimraf": "^3.0.2",
     "ts-jest": "^27.0.5",
     "typescript": "^4.4.3"
-  },
-  "repository": "https://github.com/HoangNguyen17193/react-geetest-captcha.git",
-  "license": "MIT",
-  "private": false
+  }
 }
